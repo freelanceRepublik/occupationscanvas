@@ -4,56 +4,24 @@
     {
       "name": "Dev",
       "children": [
-        {
-          "name": "Dev Web Backend",
-          "ID": "1.1",
-          "size": 52
-        },
-        {
-          "name": "Dev Web Frontend",
-          "ID": "1.2",
-          "size": 52
-        },
-        {
-          "name": "Dev Web Fullstack",
-          "ID": "1.3",
-          "size": 52
-        },
-        {
-          "name": "Dev CMS",
-          "ID": "1.2",
-          "size": 52
-        },
-        {
-          "name": "Dev Mobile",
-          "ID": "1.2",
-          "size": 52
-        },
-        {
-          "name": "Intégrateur Web",
-          "ID": "1.2",
-          "size": 52
-        },
-        {
-          "name": "Software Engineer",
-          "ID": "1.2",
-          "size": 52
-        },
-        {
-          "name": "Software Architect",
-          "ID": "1.2",
-          "size": 52
-        },
-        {
-          "name": "Lead Dev",
-          "ID": "1.2",
-          "size": 52
-        },
-        {
-          "name": "Lead Tech",
-          "ID": "1.2",
-          "size": 52
-        }
+        { "name": "Dev Web Backend", "ID": "1.1", "size": 52 },
+        { "name": "Dev Web Frontend", "ID": "1.2", "size": 52 },
+        { "name": "Dev Web Fullstack", "ID": "1.3", "size": 52 },
+        { "name": "Dev CMS", "ID": "1.4", "size": 52 },
+        { "name": "Dev Mobile", "ID": "1.5", "size": 52 },
+        { "name": "Intégrateur Web", "ID": "1.6", "size": 52 },
+        { "name": "Software Engineer", "ID": "1.7", "size": 52 },
+        { "name": "Software Architect", "ID": "1.8", "size": 52 },
+        { "name": "Lead Dev", "ID": "1.9", "size": 52 },
+        { "name": "Lead Tech", "ID": "1.10", "size": 52 }
+      ]
+    },
+    {
+      "name": "Data",
+      "children": [
+        { "name": "Data Scientist", "ID": "2.1", "size": 52 },
+        { "name": "Data Engineer", "ID": "2.2", "size": 52 },
+        { "name": "Data Analyst", "ID": "2.3", "size": 52 }
       ]
     }
   ]
