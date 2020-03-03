@@ -508,8 +508,8 @@ function drawAll(error, ageCSV, idCSV, occupations) {
           ($.inArray(node.name, kids) >= 0)
         ) {
           //Calculate the best font size for the non-leaf nodes
-          // var fontSizeTitle = Math.round(nodeR / 10);
-          var fontSizeTitle = 25;
+          var fontSizeTitle = Math.round(zoomInfo.scale * 25);
+
           if (fontSizeTitle > 4)
             drawCircularText(
               chosenContext,
