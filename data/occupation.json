@@ -23,6 +23,43 @@
         { "name": "Data Engineer", "ID": "2.2", "size": 52 },
         { "name": "Data Analyst", "ID": "2.3", "size": 52 }
       ]
+    },
+    {
+      "name": "Infra",
+      "children": [
+        { "name": "SysAdmin", "ID": "3.1", "size": 52 },
+        { "name": "Administrateur Réseaux", "ID": "3.2", "size": 52 },
+        { "name": "DevOps", "ID": "3.3", "size": 52 },
+        { "name": "Expert Virtualisation", "ID": "3.4", "size": 52 },
+        { "name": "Architecte & Urbaniste SI", "ID": "3.5", "size": 52 }
+      ]
+    },
+    {
+      "name": "Test",
+      "children": [
+        { "name": "Lead QA & Automatization", "ID": "4.1", "size": 52 },
+        { "name": "QA Tester / Testeur QA", "ID": "4.2", "size": 52 }
+      ]
+    },
+    {
+      "name": "Gestion projet",
+      "children": [
+        { "name": "Product Owner (PO)", "ID": "5.1", "size": 52 },
+        { "name": "Proxy PO", "ID": "5.2", "size": 52 },
+        { "name": "Project Manager", "ID": "5.3", "size": 52 },
+        { "name": "Scrum Master", "ID": "5.4", "size": 52 },
+        { "name": "Coach Agile", "ID": "5.5", "size": 52 }
+      ]
+    },
+    {
+      "name": "Créatif",
+      "children": [
+        { "name": "Directeur Artistique", "ID": "6.1", "size": 52 },
+        { "name": "UX Designer", "ID": "6.2", "size": 52 },
+        { "name": "UI Designer", "ID": "6.3", "size": 52 },
+        { "name": "Webdesigner", "ID": "6.4", "size": 52 },
+        { "name": "Graphiste", "ID": "6.5", "size": 52 }
+      ]
     }
   ]
 }
