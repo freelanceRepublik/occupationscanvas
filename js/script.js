@@ -231,11 +231,52 @@ function drawAll(error, ageCSV, idCSV, occupations) {
       chosenContext.arc(nodeX, nodeY, nodeR, 0, 2 * Math.PI, true);
       chosenContext.fill();
 
+      const showBubbleDetails = nodeR > 100;
+
       // Display inline titles
-      if (node.depth >= 2) {
-        chosenContext.font = `${10 * zoomInfo.scale}px serif`;
+      if (!showBubbleDetails && node.depth >= 2) {
+        chosenContext.font = `${10 * zoomInfo.scale}px ${titleFont}`;
         chosenContext.fillStyle = "#303030";
         chosenContext.fillText(node.name, nodeX, nodeY, nodeR * 2 - 5);
+      }
+
+      // Draw bubble description
+      const fontSizeDetails = Math.round(nodeR / 10);
+
+      if (showBubbleDetails && showText && fontSizeDetails > 20) {
+        const fontSizeDescription = fontSizeDetails * 0.75;
+        const detailsWidthRatio = 0.8;
+
+        // Display the title
+        chosenContext.font = `${fontSizeDetails}px ${titleFont}`;
+        chosenContext.fillStyle = "#303030"; //"#BFBFBF";
+        chosenContext.textAlign = "center";
+        chosenContext.textBaseline = "middle";
+        chosenContext.fillText(node.name, nodeX, nodeY + -0.75 * nodeR);
+
+        if (node.description) {
+          // Display the description
+          //Get the description text back in pieces that will fit inside the node
+          var descriptionText = getLines(
+            chosenContext,
+            node.description,
+            nodeR * 2 * detailsWidthRatio,
+            fontSizeDescription,
+            bodyFont
+          );
+          //Loop over all the pieces and draw each line
+          descriptionText.forEach(function(txt, iterator) {
+            chosenContext.font = `${fontSizeDescription}px ${bodyFont}`;
+            chosenContext.fillStyle = "#606060";
+            chosenContext.textAlign = "left";
+            chosenContext.textBaseline = "middle";
+            chosenContext.fillText(
+              txt,
+              nodeX - nodeR * detailsWidthRatio,
+              nodeY + (-0.5 + iterator * 0.125) * nodeR
+            );
+          });
+        }
       }
 
       //Draw the bars inside the circles (only in the visible canvas)

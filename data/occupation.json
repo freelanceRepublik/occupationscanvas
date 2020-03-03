@@ -55,10 +55,30 @@
       "name": "Créatif",
       "children": [
         { "name": "Directeur Artistique", "ID": "6.1", "size": 52 },
-        { "name": "UX Designer", "ID": "6.2", "size": 52 },
-        { "name": "UI Designer", "ID": "6.3", "size": 52 },
-        { "name": "Webdesigner", "ID": "6.4", "size": 52 },
-        { "name": "Graphiste", "ID": "6.5", "size": 52 }
+        {
+          "name": "UX Designer",
+          "ID": "6.2",
+          "size": 52,
+          "description": "met l’utilisateur final au coeur de la conception d’un produit (site Web, applications mobiles ou PC, objets connectés). Approche plus psychologique qu’esthétique du design : il doit faire preuve d’empathie et se mettre à la place de l’utilisateur pour le comprendre et concevoir une interface sur-mesure pour lui."
+        },
+        {
+          "name": "UI Designer",
+          "ID": "6.3",
+          "size": 52,
+          "description": "conçoit les interfaces visuelles de sites Web et d’applications mobiles sur lesquelles l’utilisateur final va interagir. Il peut travailler en collaboration avec un UX designer qui a analysé l’utilisateur final."
+        },
+        {
+          "name": "Webdesigner",
+          "ID": "6.4",
+          "size": 52,
+          "description": "UI Designer uniquement pour site Web (pas d'app mobile). En voie de disparition au profil des UI Designers."
+        },
+        {
+          "name": "Graphiste",
+          "ID": "6.5",
+          "size": 52,
+          "description": "communication visuelle d’un produit"
+        }
       ]
     }
   ]
