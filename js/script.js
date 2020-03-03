@@ -238,7 +238,7 @@ function drawAll(error, ageCSV, idCSV, occupations) {
         chosenContext.font = `${10 * zoomInfo.scale}px ${titleFont}`;
         chosenContext.fillStyle = "#303030";
         chosenContext.fillText(
-          `${node.name} ${node.description ? " ✔" : ""}`,
+          `${node.name} ${node.description ? "✔" : ""}${node.stack ? "✔" : ""}`,
           nodeX,
           nodeY,
           nodeR * 2 - 5
