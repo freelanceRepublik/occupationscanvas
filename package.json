@@ -1,0 +1,16 @@
+{
+  "name": "webinbubbles",
+  "version": "1.0.0",
+  "description": "A graphical tool to explore the Web-related Jobs, Concepts & Domains.",
+  "main": "server.js",
+  "repository": "git@github.com:freelanceRepublik/occupationscanvas.git",
+  "author": "Aurélien BASILLE <abasille@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --config nodemon.json node server.js"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
