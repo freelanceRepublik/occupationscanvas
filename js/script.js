@@ -231,7 +231,7 @@ function drawAll(error, ageCSV, idCSV, occupations) {
       chosenContext.arc(nodeX, nodeY, nodeR, 0, 2 * Math.PI, true);
       chosenContext.fill();
 
-      const showBubbleDetails = nodeR > 100;
+      const showBubbleDetails = nodeR > 200;
 
       // Display inline titles
       if (!showBubbleDetails && node.depth >= 2) {
@@ -243,8 +243,8 @@ function drawAll(error, ageCSV, idCSV, occupations) {
       // Draw bubble description
       const fontSizeDetails = Math.round(nodeR / 10);
 
-      if (showBubbleDetails && showText && fontSizeDetails > 20) {
-        const fontSizeDescription = fontSizeDetails * 0.75;
+      if (showBubbleDetails && showText && node.depth >= 2) {
+        const fontSizeDescription = fontSizeDetails * 0.5;
         const detailsWidthRatio = 0.8;
 
         // Display the title
@@ -273,7 +273,7 @@ function drawAll(error, ageCSV, idCSV, occupations) {
             chosenContext.fillText(
               txt,
               nodeX - nodeR * detailsWidthRatio,
-              nodeY + (-0.5 + iterator * 0.125) * nodeR
+              nodeY + (-0.5 + iterator * 0.075) * nodeR
             );
           });
         }
