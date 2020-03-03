@@ -214,9 +214,13 @@ function drawAll(error, ageCSV, idCSV, occupations) {
         // On the hidden canvas each rectangle gets a unique color.
         chosenContext.fillStyle = node.color;
       } else {
-        chosenContext.fillStyle = node.children
-          ? colorCircle(node.depth)
-          : "white";
+        if (node.col) {
+          chosenContext.fillStyle = node.col;
+        } else {
+          chosenContext.fillStyle = node.children
+            ? colorCircle(node.depth)
+            : "white";
+        }
       } //else
 
       var nodeX = (node.x - zoomInfo.centerX) * zoomInfo.scale + centerX,

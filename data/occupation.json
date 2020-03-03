@@ -1,8 +1,10 @@
 {
   "name": "Catégories métier",
+  "col": "#1D2D40",
   "children": [
     {
       "name": "Dev",
+      "col": "#296C6E",
       "children": [
         {
           "name": "Dev Web Backend",
@@ -62,6 +64,7 @@
     },
     {
       "name": "Data",
+      "col": "#67AEB3",
       "children": [
         {
           "name": "Data Scientist",
@@ -75,6 +78,7 @@
     },
     {
       "name": "Infra",
+      "col": "#8AD1A3",
       "children": [
         { "name": "SysAdmin", "ID": "3.1", "size": 52, "description": "" },
         {
@@ -105,6 +109,7 @@
     },
     {
       "name": "Test",
+      "col": "#57AF8E",
       "children": [
         {
           "name": "Lead QA & Automatization",
@@ -122,6 +127,7 @@
     },
     {
       "name": "Gestion projet",
+      "col": "#7BBA65",
       "children": [
         {
           "name": "Product Owner (PO)",
@@ -142,6 +148,7 @@
     },
     {
       "name": "Créatif",
+      "col": "#4D76A8",
       "children": [
         {
           "name": "Directeur Artistique",
