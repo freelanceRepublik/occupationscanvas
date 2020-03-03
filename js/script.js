@@ -33,9 +33,9 @@ function drawAll(error, ageCSV, idCSV, occupations) {
   var mobileSize = window.mobileAndTabletcheck();
 
   var padding = 20,
-    width = Math.max($("#chart").innerWidth(), 350) - padding,
+    width = $("#chart").innerWidth() - padding,
     height =
-      mobileSize | (window.innerWidth < 768) ? width : window.innerHeight - 90;
+      mobileSize | (window.innerWidth < 768) ? width : window.innerHeight;
 
   var centerX = width / 2,
     centerY = height / 2;

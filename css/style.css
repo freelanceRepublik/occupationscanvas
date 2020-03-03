@@ -2,6 +2,13 @@ body {
   font-size: 16px;
 }
 
+.panel-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
 #chart {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 10px;
@@ -26,6 +33,7 @@ a:hover {
 #topTitle {
   font-size: 4rem;
   line-height: 1.2;
+  margin-top: 6rem;
 }
 
 #subTitle {
