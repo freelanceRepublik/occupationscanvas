@@ -237,7 +237,12 @@ function drawAll(error, ageCSV, idCSV, occupations) {
       if (!showBubbleDetails && node.depth >= 2) {
         chosenContext.font = `${10 * zoomInfo.scale}px ${titleFont}`;
         chosenContext.fillStyle = "#303030";
-        chosenContext.fillText(node.name, nodeX, nodeY, nodeR * 2 - 5);
+        chosenContext.fillText(
+          `${node.name} ${node.description ? " ✔" : ""}`,
+          nodeX,
+          nodeY,
+          nodeR * 2 - 5
+        );
       }
 
       // Draw bubble description
@@ -274,6 +279,39 @@ function drawAll(error, ageCSV, idCSV, occupations) {
               txt,
               nodeX - nodeR * detailsWidthRatio,
               nodeY + (-0.5 + iterator * 0.075) * nodeR
+            );
+          });
+        }
+
+        if (node.stack) {
+          chosenContext.font = `${fontSizeDescription}px ${bodyFont}`;
+          chosenContext.fillStyle = "#303030";
+          chosenContext.textAlign = "left";
+          chosenContext.textBaseline = "middle";
+          chosenContext.fillText(
+            "Stack",
+            nodeX - nodeR * detailsWidthRatio,
+            nodeY + nodeR * (0.5 - 0.075)
+          );
+
+          const fontSizeStack = fontSizeDetails * 0.4;
+          const stackText = getLines(
+            chosenContext,
+            node.stack.join(", "),
+            nodeR * 2 * detailsWidthRatio,
+            fontSizeStack,
+            bodyFont
+          );
+
+          stackText.forEach(function(txt, iterator) {
+            chosenContext.font = `${fontSizeStack}px ${bodyFont}`;
+            chosenContext.fillStyle = "#606060";
+            chosenContext.textAlign = "left";
+            chosenContext.textBaseline = "middle";
+            chosenContext.fillText(
+              txt,
+              nodeX - nodeR * detailsWidthRatio,
+              nodeY + (+0.5 + iterator * 0.075) * nodeR
             );
           });
         }
